@@ -14,10 +14,7 @@ public class Test {
                 "Roma",
                 "gianni.neri@mail.com",
                 "Via delle Campane, 12",
-                16.70,
-                9,
-                8,
-                8);
+                16.70);
         doc.stampaDocente();
     }
 }

@@ -1,9 +1,10 @@
 package domain;
 
+import java.util.ArrayList;
+
 public class Docente extends Utente{
 
     private double costoOrario;
-    private Competenze competenzeAvanzate;
 
     public Docente(
                      int id,
@@ -17,10 +18,7 @@ public class Docente extends Utente{
                      String cittaNascita,
                      String email,
                      String indirizzo,
-                     double costoOrario,
-                     int valJava,
-                     int valCsharp,
-                     int valPython){
+                     double costoOrario){
         super(id,
                 nome,
                 cognome,
@@ -32,8 +30,7 @@ public class Docente extends Utente{
                 cittaNascita,
                 email,
                 indirizzo);
-        this.costoOrario = costoOrario;
-        competenzeAvanzate = new Competenze(valJava, valCsharp, valPython);
+        this.costoOrario = costoOrario;;
     }
 
     public void stampaDocente(){
@@ -48,10 +45,7 @@ public class Docente extends Utente{
         System.out.println(getCittaNascita());
         System.out.println(getEmail());
         System.out.println(getIndirizzo());
-        System.out.println(costoOrario);
-        System.out.println(competenzeAvanzate.getJava());
-        System.out.println(competenzeAvanzate.getcSharp());
-        System.out.println(competenzeAvanzate.getPython());
+        System.out.println(costoOrario);;
     }
 
     public double getCostoOrario() {
